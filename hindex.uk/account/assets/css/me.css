@@ -1,0 +1,383 @@
+.total-price {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    padding: 10% 0 0 20%;
+    text-align: right;
+    align-content: center;
+    /*width: 50%;*/
+}
+
+.alertku {
+    width: 40%;
+    padding: 5%;
+    top: 20%;
+    left: 30%;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    background-color: #ffede7;
+    color: #b34943;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    border: 3px solid #b34943;
+}
+
+.alertku-msg {
+    width: 40%;
+    padding: 5%;
+    top: 20%;
+    left: 30%;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    background-color: #e6ffde;
+    color: #248429;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    border: 3px solid #248429;
+}
+
+.closebtn-r {
+    margin-left: 15px;
+    color: #b34943;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.closebtn-r:hover {
+    color: black;
+}
+
+.closebtn-g {
+    margin-left: 15px;
+    color: #248429;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.closebtn-g:hover {
+    color: black;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    /*z-index: 2; !* Sit on top *!*/
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal1 {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    padding: 5em 5em 3em 5em;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+/* The Close Button (x) */
+/*.close {*/
+/*    !*position: absolute;*!*/
+/*    !*right: -50px;*!*/
+/*    !*top: -70px;*!*/
+/*    color: #000;*/
+/*    font-size: 35px;*/
+/*    font-weight: bold;*/
+/*    !*padding: 3em;*!*/
+/*}*/
+
+.close {
+    /*position: absolute;*/
+    /*right: -50px;*/
+    /*top: -70px;*/
+    color: #ffffff;
+    background-color: #3a57e6;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 30px 70px 0 70px;
+    padding: 10px;
+    opacity: 1;
+    text-shadow: none;
+    border-radius: 0.3em;
+    /*width: 50%;*/
+    /*padding: 0 25% 0 25%;*/
+    /*padding: 0 10px 0 10px;*/
+    /*padding: 3em;*/
+}
+
+.close:hover {
+    color: red;
+    /*cursor: pointer;*/
+}
+
+/*.close:hover,*/
+/*.close:focus {*/
+/*    color: red;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.bottom_aligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
+}
+
+.bottom_aligner-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.me-align-center {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    /*width: 100%;*/
+}
+
+.huytooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.huytooltip .huytooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #555;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px ;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    right: 30%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.huytooltip .huytooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 30%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.huytooltip:hover .huytooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.copytooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.copytooltip .copytooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.copytooltip .copytooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.copytooltip:hover .copytooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.copy-button{
+    /*background-color: #dddff9;*/
+    /*border-radius: 10px;*/
+    color: #5562eb;
+    /*padding: 0 10px 0 10px;*/
+    font-size: .9em;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: auto;
+    /*background-image: url("../../assets/images/icons/clipboard.png");*/
+}
+
+.psw-tip {
+    font-size: .9em;
+    /*font-weight: 900;*/
+    /*background-color: #3f51b5;*/
+    color: red;
+    /*position: absolute;*/
+}
+
+
+.ps1-huytooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.ps1-huytooltip .ps1-huytooltiptext {
+    width: 250px;
+    background-color: #555;
+    color: #d01616;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    right: 30%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.line-strength {
+    position:absolute;
+    width:30%;
+    height:2px;
+    background-color:transparent;
+    transition:all 0.3s ease-in-out;
+    bottom:-1px;
+    left:0;
+    border-radius:2px;
+    opacity: 0;
+    visibility: hidden;
+}
+.line-strength.show {
+    background-color:#ff082d;
+    opacity: 1;
+    visibility: visible;
+}
+.line-strength.short {
+    background-color: #ff082d;
+    width:20%;
+}
+.line-strength.weak {
+    background-color: orange;
+    width:50%;
+}
+.line-strength.good {
+    background-color: #161ced;;
+    width:80%;
+}
+.line-strength.strong {
+    background-color: #1eac39;
+    width:100%;
+}
+.relative {
+    position: relative;
+}

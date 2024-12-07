@@ -1,0 +1,129 @@
+/* checkbox Flat
+==========================*/
+.checkbox-flat {
+    padding: 0;
+    background: transparent;
+    background-image: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.checkbox-flat .checkbox-label {
+    background: transparent;
+    border: solid 2px #777777;
+    box-shadow: none;
+    border-radius:0px;
+}
+.checkbox-flat .checkbox-label:after {
+    color: #5CB85C;
+}
+.checkbox-flat .checkbox-handle {
+    top: 5px;
+    left: 5px;
+    background: #dadada;
+    width: 10px;
+    height: 10px;
+    box-shadow: none;
+}
+.checkbox-flat .checkbox-handle:before {
+    background: #777777;
+}
+.checkbox-flat .checkbox-input:checked ~ .checkbox-label {
+    background: #FFF;
+    border-color: #5CB85C;
+    border-radius:0;
+}
+.checkbox-flat .checkbox-input:checked ~ .checkbox-handle {
+    background: #5CB85C;
+    box-shadow: none;
+}
+.checkbox-flat .checkbox-input:checked ~ .checkbox-handle:before{
+    background: #5CB85C;
+}
+.checkbox-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.checkbox-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #777777;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+}
+.checkbox-label:before, .checkbox-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+}
+.checkbox-label:before {
+    content: attr(data-off);
+    right: 8px;
+    color: #777777;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.checkbox-label:after {
+    content: attr(data-on);
+    left: 8px;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+.checkbox-input:checked ~ .checkbox-label {
+    background: #E1B42B;
+    /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2); */
+}
+.checkbox-input:checked ~ .checkbox-label:before {
+    opacity: 0;
+}
+.checkbox-input:checked ~ .checkbox-label:after {
+    opacity: 1;
+}
+.checkbox-handle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+    /*border-radius: 100%;*/
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+.checkbox-handle:before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    margin: -6px 0 0 -6px;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+    border-radius: 0px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+
+/* Transition
+========================== */
+.checkbox-label, .checkbox-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+}
